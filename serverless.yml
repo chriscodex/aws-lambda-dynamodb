@@ -5,6 +5,8 @@ provider:
   name: aws
   runtime: nodejs18.x
   region: 'us-west-2'
+  iamRoleStatements:
+    - Effect: Allow
 
 functions:
   api:
