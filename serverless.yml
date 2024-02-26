@@ -13,3 +13,8 @@ functions:
       - httpApi:
           path: /
           method: get
+
+resources:
+  Resources:
+    TaskTable:
+      Type: AWS::DynamoDB::Table
