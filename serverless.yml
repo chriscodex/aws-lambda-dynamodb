@@ -9,6 +9,8 @@ provider:
     - Effect: Allow
       Action:
         - dynamodb:*
+      Resource: 
+        - arn:aws:dynamodb:us-west-2:660686573431:table/TaskTable
 
 functions:
   api:
