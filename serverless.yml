@@ -20,6 +20,13 @@ functions:
           path: /
           method: get
 
+  createTask:
+    handler: src/addTask.addTask
+    events:
+      - httpApi:
+          path: /
+          method: post
+
 resources:
   Resources:
     TaskTable:
