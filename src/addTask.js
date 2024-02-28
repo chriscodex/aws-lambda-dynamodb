@@ -15,7 +15,12 @@ const addTask = async (event) => {
     createdAt,
   };
 
-  
+  await dynamodb
+    .put({
+      TableName: 'TaskTable',
+      Item: newTask,
+    })
+    .promise();
 };
 
 module.exports = {
