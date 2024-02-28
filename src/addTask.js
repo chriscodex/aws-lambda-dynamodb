@@ -7,6 +7,15 @@ const addTask = async (event) => {
   const { title, description } = event.body;
   const createdAt = new Date();
   const id = v4();
+
+  const newTask = {
+    id,
+    title,
+    description,
+    createdAt,
+  };
+
+  
 };
 
 module.exports = {
