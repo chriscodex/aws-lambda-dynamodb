@@ -12,6 +12,9 @@ const updateTask = (event) => {
       id,
     },
     UpdateExpression: 'set done = :done',
+    ExpressionAttributeValues: {
+      ':done': done,
+    },
   })
 };
 
