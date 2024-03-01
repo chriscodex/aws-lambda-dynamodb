@@ -11,6 +11,8 @@ const updateTask = (event) => {
     Key: {
       id,
     },
+    UpdateExpression: 'set done = :done',
+  })
 };
 
 module.exports = {
