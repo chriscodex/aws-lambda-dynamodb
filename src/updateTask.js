@@ -5,6 +5,10 @@ const updateTask = (event) => {
 
   const { id } = event.pathParameters;
   const { done } = JSON.parse(event.body);
+
+  await dynamodb.update({
+    TableName: 'TaskTable',
+  })
 };
 
 module.exports = {
