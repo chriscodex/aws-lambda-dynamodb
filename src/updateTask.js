@@ -16,7 +16,7 @@ const updateTask = (event) => {
       ':done': done,
     },
     ReturnValues: 'ALL_NEW',
-  })
+  }).promise()
 };
 
 module.exports = {
