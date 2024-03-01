@@ -6,6 +6,8 @@ const getTask = async (event) => {
   const result = await dynamodb.scan({
     TableName: 'TaskTable',
   }).promise()
+
+  const tasks = result.Items
 }
 
 module.exports = {
