@@ -15,6 +15,7 @@ const updateTask = (event) => {
     ExpressionAttributeValues: {
       ':done': done,
     },
+    ReturnValues: 'ALL_NEW',
   })
 };
 
