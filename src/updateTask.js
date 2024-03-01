@@ -8,7 +8,9 @@ const updateTask = (event) => {
 
   await dynamodb.update({
     TableName: 'TaskTable',
-  })
+    Key: {
+      id,
+    },
 };
 
 module.exports = {
