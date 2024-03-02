@@ -12,7 +12,8 @@ const updateTask = async (event) => {
       Key: {
         id,
       },
-      UpdateExpression: 'set done = :done',
+      UpdateExpression:
+        'set done = :done, title = :title, description = :description',
       ExpressionAttributeValues: {
         ':done': done,
         ':title': title,
