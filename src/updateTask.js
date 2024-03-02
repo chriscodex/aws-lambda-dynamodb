@@ -17,6 +17,11 @@ const updateTask = (event) => {
     },
     ReturnValues: 'ALL_NEW',
   }).promise()
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: 'Task updated successfully' }),
+  };
 };
 
 module.exports = {
