@@ -13,6 +13,13 @@ const deleteTask = async (event) => {
       },
     })
     .promise();
+
+  return {
+    status: 200,
+    body: {
+      message: 'Task deleted successfully',
+    },
+  };
 };
 
 module.exports = {
