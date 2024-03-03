@@ -2,6 +2,7 @@ const { v4 } = require('uuid');
 const AWS = require('aws-sdk');
 
 const middy = require('@middy/core');
+const jsonBodyParser = require('@middy/http-json-body-parser');
 
 const addTask = async (event) => {
   const dynamodb = new AWS.DynamoDB.DocumentClient();
